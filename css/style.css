@@ -590,6 +590,12 @@ body .container .relax_banner button {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  body .container .latest_project {
+    height: 600px;
+  }
+}
+
 body .container .latest_project .project_title h1 {
   text-align: center;
   text-transform: uppercase;
@@ -676,18 +682,25 @@ body .container .latest_project .project_lead p {
 
 body .container .latest_project .project_list {
   list-style: none;
-  /*  @include mQ(1024px){
-                            background-image: url(../images/ipad.png);
-                            background-size: 50% auto;
-                            background-position: right 50%;
-                            background-repeat: no-repeat;
-                            padding-bottom: 100px;
-                    }// 768px*/
+}
+
+@media screen and (min-width: 1024px) {
+  body .container .latest_project .project_list {
+    background-image: url(../images/ipad.png);
+    background-size: 50% auto;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    height: 300px;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: absolute;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   body .container .latest_project .project_list nav {
-    width: auto;
+    width: 50%;
   }
 }
 
@@ -706,7 +719,7 @@ body .container .latest_project .project_list nav li {
 @media screen and (min-width: 1024px) {
   body .container .latest_project .project_list nav li {
     float: left;
-    width: 70%;
+    width: auto;
     padding-bottom: 2.5%;
   }
 }
@@ -784,6 +797,12 @@ body .container .latest_project .project_list nav li p {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  body .container .latest_project .project_list nav li p {
+    width: auto;
+  }
+}
+
 body .container .latest_project .project_list nav:after {
   content: "";
   display: block;
@@ -824,8 +843,11 @@ body .container .latest_project .project_details p {
 
 @media screen and (min-width: 1024px) {
   body .container .latest_project .project_details p {
-    margin-left: 15%;
+    margin-left: 10%;
     width: 39%;
+    position: relative;
+    top: 280px;
+    background-color: transparent;
   }
 }
 
@@ -853,7 +875,9 @@ body .container .latest_project .project_details button {
 
 @media screen and (min-width: 1024px) {
   body .container .latest_project .project_details button {
-    margin-left: 15%;
+    margin-left: 10%;
+    position: relative;
+    top: 290px;
   }
 }
 

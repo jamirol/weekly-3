@@ -492,6 +492,10 @@ body{
            }//relac_banner after
 
            .latest_project{
+
+            @include mQ(1024px){
+                height: 600px;
+            }
                .project_title{
                     h1{
                         text-align: center;
@@ -560,16 +564,20 @@ body{
                     }//project lead
                     .project_list{
                         list-style: none;
-                      /*  @include mQ(1024px){
+                        @include mQ(1024px){
                             background-image: url(../images/ipad.png);
                             background-size: 50% auto;
                             background-position: right 50%;
                             background-repeat: no-repeat;
                             padding-bottom: 100px;
-                    }// 768px*/
+                            height: 300px;
+                            align-items: flex-start;
+                            align-content: flex-start;
+                            position: absolute;
+                    }// 768px
                         nav{
                             @include mQ(1024px){
-                                width: auto;
+                                width: 50%;
                             }
                             li{ 
                                 margin-top: 15%;
@@ -580,7 +588,7 @@ body{
                                 }//610px
                                  @include mQ(1024px){
                                     float: left;
-                                    width: 70%;
+                                    width: auto;
                                     padding-bottom: 2.5%;
                                  } 
                                img{
@@ -631,6 +639,9 @@ body{
                                   @include mQ(768px){
                                       margin-left: 22px;
                                   }
+                                  @include mQ(1024px){
+                                    width: auto;
+                                }
                                }
                             }//li
                         }//nav
@@ -659,8 +670,11 @@ body{
                                 margin-left: 22%;
                             }
                              @include mQ(1024px){
-                                margin-left: 15%;
-                                width: 39%;    
+                                margin-left: 10%;
+                                width: 39%;   
+                                position: relative;
+                                top: 280px;
+                                background-color: transparent; 
                             } 
                         }//p
 
@@ -679,8 +693,9 @@ body{
                                 margin-left: 22%;
                             }
                              @include mQ(1024px){
-                                margin-left: 15%;
-               
+                                margin-left: 10%;
+                                position: relative;
+                                top:290px;
                              } 
                         }//button
                     }//project details
