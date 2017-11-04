@@ -5,6 +5,15 @@
   padding: 0;
 }
 
+@media screen and (min-width: 1440px) {
+  body .container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
 body .container .header {
   text-transform: uppercase;
 }
@@ -1087,13 +1096,13 @@ body .container .clients {
 
 @media screen and (min-width: 1150px) {
   body .container .clients {
-    left: 900px;
+    height: 976px;
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1440px) {
   body .container .clients {
-    height: 976px;
+    margin-bottom: 8%;
   }
 }
 

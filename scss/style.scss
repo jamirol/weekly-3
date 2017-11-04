@@ -27,6 +27,8 @@ $button_color: #7cc576;
     }
 }
 
+
+
 //
 *{
  background-color: $body-color;
@@ -39,6 +41,13 @@ $button_color: #7cc576;
 
 body{
     .container{
+
+        @include mQ(1440px){
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            } 
         .header{
                  
             @include big-letter();
@@ -835,10 +844,10 @@ body{
                     height: 850px;
                 }//610px
                 @include mQ(1150px){
-                    left: 900px;
-                }// 1150
-                @include mQ(1150px){
                     height: 976px;
+                }// 1150
+                @include mQ(1440px){
+                    margin-bottom: 8%;
                 }// 1440
                 .clients_title{
                     h2{
