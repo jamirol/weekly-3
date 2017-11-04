@@ -174,6 +174,9 @@ body{
                         margin-left: 30%;
                         font-size: 20px;
                     }// 768px
+                    @include mQ(1440px){
+                        left: 7%;
+                    }// 1024
                 } // p
                 button{
                     position: absolute;
@@ -209,7 +212,13 @@ body{
                     }// 768px
                     @include mQ(1024px){
                         left: 420px;
-                    }// 768px
+                    }// 1024
+                    @include mQ(1150px){
+                        left: 490px;
+                    }// 1150
+                    @include mQ(1440px){
+                        left: 633px;
+                    }// 1024
                 }//button
             } //banner_title
         }  //banner 
@@ -347,7 +356,14 @@ body{
                     }// 875x
                    @include mQ(1024px){
                         left: 378px;
-                    }// 768px
+                    }// 1024
+                    @include mQ(1150px){
+                        left: 425px;
+                    }// 1024
+                    @include mQ(1440px){
+                        left: 691px;
+                        width: 52%;
+                    }// 1440
                 .rack-content{
                               visibility: hidden;
                     height: 0;
@@ -379,7 +395,16 @@ body{
                     }// 875px
                    @include mQ(1024px){
                         left: -390px;
-                    }// 768px
+                    }// 1024
+                    @include mQ(1150px){
+                        left: -428px;
+                    }// 1024
+                    @include mQ(1440px){
+                        left: -690px;
+                        background-image: url(../images/rack.png);
+                        background-color: rgb(118,118,118);
+                        width: 93%;
+                    }// 1440
               }//rack-content
 
                 .banner_title{
@@ -575,6 +600,11 @@ body{
                             align-content: flex-start;
                             position: absolute;
                     }// 768px
+                    @include mQ(1440px){
+                        background-position: right 338%;
+                        height: 465px;
+                        padding-bottom: 150px;
+                    }// 1024
                         nav{
                             @include mQ(1024px){
                                 width: 50%;
@@ -711,6 +741,12 @@ body{
                  @include mQ(610px){
                     height: 1230px;
                 }//610px
+                @include mQ(1150px){
+                    height: 646px;
+                }// 1150
+                @include mQ(1440px){
+                    height: 900px;
+                }// 1024
                 .culture_title{
                     background-color: transparent;
                     h1{
@@ -745,6 +781,14 @@ body{
                         @include mQ(610px){
                             margin-top: 11%;
                         }//610px
+                        @include mQ(1150px){
+                            float: left;
+                            width: 33%;
+                            margin-top: 11%;
+                        }// 1024
+                        @include mQ(1440px){
+                            margin-top: 25%;
+                        }// 1440
                      h4{
                          background-color: transparent;
                         font-size: 16px;
@@ -753,6 +797,9 @@ body{
                         text-transform: uppercase;
                         margin-top: 4%;
                         margin-bottom: 4%;
+                        @include mQ(1150px){
+                            font-size: 22px;
+                        }// 1024
                         }//h4
                      img{
                         text-align: center;
@@ -772,6 +819,11 @@ body{
                             text-align: left;
                             width: 40%;
                         }//610px
+                        @include mQ(1150px){
+                            width: 68%;
+                            margin-top: 7%;
+                            font-size: 13px;
+                        }// 1024
                       }//p
                     }  //.properties_arguments
                 }//culture_properties     
@@ -782,6 +834,12 @@ body{
                 @include mQ(610px){
                     height: 850px;
                 }//610px
+                @include mQ(1150px){
+                    left: 900px;
+                }// 1150
+                @include mQ(1150px){
+                    height: 976px;
+                }// 1440
                 .clients_title{
                     h2{
                         text-transform: uppercase;
@@ -926,6 +984,9 @@ body{
                 @include mQ(610px){
                     height: 100px
                 }//610px
+                @include mQ(1440px){
+                    height: 142px;
+                }// 1440
                 img{
                     width: 20%;
                     padding-right: 3%;

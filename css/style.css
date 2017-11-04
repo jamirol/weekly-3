@@ -190,6 +190,12 @@ body .container .banner .banner_title p {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  body .container .banner .banner_title p {
+    left: 7%;
+  }
+}
+
 body .container .banner .banner_title button {
   position: absolute;
   top: 300px;
@@ -244,6 +250,18 @@ body .container .banner .banner_title button {
 @media screen and (min-width: 1024px) {
   body .container .banner .banner_title button {
     left: 420px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  body .container .banner .banner_title button {
+    left: 490px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body .container .banner .banner_title button {
+    left: 633px;
   }
 }
 
@@ -421,6 +439,19 @@ body .container .relax_banner {
   }
 }
 
+@media screen and (min-width: 1150px) {
+  body .container .relax_banner {
+    left: 425px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body .container .relax_banner {
+    left: 691px;
+    width: 52%;
+  }
+}
+
 body .container .relax_banner .rack-content {
   visibility: hidden;
   height: 0;
@@ -466,6 +497,21 @@ body .container .relax_banner .rack-content {
 @media screen and (min-width: 1024px) {
   body .container .relax_banner .rack-content {
     left: -390px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  body .container .relax_banner .rack-content {
+    left: -428px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body .container .relax_banner .rack-content {
+    left: -690px;
+    background-image: url(../images/rack.png);
+    background-color: #767676;
+    width: 93%;
   }
 }
 
@@ -698,6 +744,14 @@ body .container .latest_project .project_list {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  body .container .latest_project .project_list {
+    background-position: right 338%;
+    height: 465px;
+    padding-bottom: 150px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   body .container .latest_project .project_list nav {
     width: 50%;
@@ -898,6 +952,18 @@ body .container .culture {
   }
 }
 
+@media screen and (min-width: 1150px) {
+  body .container .culture {
+    height: 646px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body .container .culture {
+    height: 900px;
+  }
+}
+
 body .container .culture .culture_title {
   background-color: transparent;
 }
@@ -948,6 +1014,20 @@ body .container .culture .culture_properties .properties_arguments {
   }
 }
 
+@media screen and (min-width: 1150px) {
+  body .container .culture .culture_properties .properties_arguments {
+    float: left;
+    width: 33%;
+    margin-top: 11%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body .container .culture .culture_properties .properties_arguments {
+    margin-top: 25%;
+  }
+}
+
 body .container .culture .culture_properties .properties_arguments h4 {
   background-color: transparent;
   font-size: 16px;
@@ -956,6 +1036,12 @@ body .container .culture .culture_properties .properties_arguments h4 {
   text-transform: uppercase;
   margin-top: 4%;
   margin-bottom: 4%;
+}
+
+@media screen and (min-width: 1150px) {
+  body .container .culture .culture_properties .properties_arguments h4 {
+    font-size: 22px;
+  }
 }
 
 body .container .culture .culture_properties .properties_arguments img {
@@ -981,6 +1067,14 @@ body .container .culture .culture_properties .properties_arguments p {
   }
 }
 
+@media screen and (min-width: 1150px) {
+  body .container .culture .culture_properties .properties_arguments p {
+    width: 68%;
+    margin-top: 7%;
+    font-size: 13px;
+  }
+}
+
 body .container .clients {
   height: 1200px;
 }
@@ -988,6 +1082,18 @@ body .container .clients {
 @media screen and (min-width: 610px) {
   body .container .clients {
     height: 850px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  body .container .clients {
+    left: 900px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  body .container .clients {
+    height: 976px;
   }
 }
 
@@ -1156,6 +1262,12 @@ body .container .logos {
 @media screen and (min-width: 610px) {
   body .container .logos {
     height: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body .container .logos {
+    height: 142px;
   }
 }
 
