@@ -123,6 +123,18 @@ body{
                         margin-right: 0;
                         font-size: 18px;
                     }
+                    a{
+                        color: $regular_color;
+                        text-decoration: none;
+                    }
+               }
+               a:hover{
+                   color: #000;
+                   cursor: pointer;
+                   -webkit-transition: background-color 3s ease-out;
+                   -moz-transition: background-color 3s ease-out;
+                   -o-transition: background-color 3s ease-out;
+                   transition: background-color 3s ease-out
                }
             }//header menu
         }//header  
@@ -142,6 +154,10 @@ body{
             margin-top: 0;
             padding-top: 0;
             margin-bottom: 20px;
+            @include mQ(1440px){
+                background-image: url(../images/desk1400x530.png);
+                height: 545px;
+            }
             .banner_title{
                 h1{ 
                     font-size: 41px;
@@ -185,6 +201,7 @@ body{
                     }// 768px
                     @include mQ(1440px){
                         left: 7%;
+                        top: 266px;
                     }// 1024
                 } // p
                 button{
@@ -227,6 +244,7 @@ body{
                     }// 1150
                     @include mQ(1440px){
                         left: 633px;
+                        top: 325px;
                     }// 1024
                 }//button
             } //banner_title
@@ -389,6 +407,10 @@ body{
                  
                  top: 18px;
                  }//610px
+                 @include mQ(705px){
+                     left: -260px;
+                     width: 60%;
+                 }
                  @include mQ(710px){
                     visibility: visible;
                     top: 18px;

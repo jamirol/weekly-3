@@ -119,6 +119,20 @@ body .container .header .header_menu li {
   }
 }
 
+body .container .header .header_menu li a {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+
+body .container .header .header_menu a:hover {
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: background-color 3s ease-out;
+  -moz-transition: background-color 3s ease-out;
+  -o-transition: background-color 3s ease-out;
+  transition: background-color 3s ease-out;
+}
+
 @media screen and (min-width: 875px) {
   body .container .header:after {
     content: "";
@@ -136,6 +150,13 @@ body .container .banner {
   margin-top: 0;
   padding-top: 0;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  body .container .banner {
+    background-image: url(../images/desk1400x530.png);
+    height: 545px;
+  }
 }
 
 body .container .banner .banner_title h1 {
@@ -202,6 +223,7 @@ body .container .banner .banner_title p {
 @media screen and (min-width: 1440px) {
   body .container .banner .banner_title p {
     left: 7%;
+    top: 266px;
   }
 }
 
@@ -271,6 +293,7 @@ body .container .banner .banner_title button {
 @media screen and (min-width: 1440px) {
   body .container .banner .banner_title button {
     left: 633px;
+    top: 325px;
   }
 }
 
@@ -478,6 +501,13 @@ body .container .relax_banner .rack-content {
     position: absolute;
     height: 622px;
     top: 18px;
+  }
+}
+
+@media screen and (min-width: 705px) {
+  body .container .relax_banner .rack-content {
+    left: -260px;
+    width: 60%;
   }
 }
 
